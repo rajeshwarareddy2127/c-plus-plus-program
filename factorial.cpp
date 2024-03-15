@@ -1,18 +1,18 @@
 #include<iostream>
 using namespace std;
+int fact(int n)
+{
+	int i,d=1;
+	for(i=1;i<n;i++)
+	{
+		d+=d*i;
+	}
+	return d;
+}
 int main()
 {
-	int fact=1,i,n;
-	cout << "enter the number:";
+	int n;
 	cin >> n;
-	for(i=1;i<=n;i++)
-	{
-		fact*=i;
-	}
-	cout << fact;
+  int  result=fact(n);
+	cout <<"fact="<<result;
 }
-/*
-output:
-enter the number:7
-5040
-*/
